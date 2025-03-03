@@ -73,10 +73,12 @@ span.component-content-detail {
     max-width: 50%;
 }
 @media (max-width: 1000px) {
-    #about {
-        padding: 5vh 3%;
+    .about-image img {
+        width: 100%; 
+        height: auto;
+        border-radius: 10px;   
     }
-
+    
     .about-section {
         flex-direction: column;
         justify-content: center;
@@ -84,7 +86,7 @@ span.component-content-detail {
     }
 
     .list-about-components {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .component-title {

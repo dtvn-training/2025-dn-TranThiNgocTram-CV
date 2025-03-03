@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .space-lr {
     padding-left: 5px;
     padding-right: 5px;
@@ -44,14 +48,14 @@
     font-weight: 600;
     letter-spacing: 3px;
     text-align: center;
-    position: relative; /* Ensure child elements position correctly */
+    position: relative; 
     margin-bottom: 10px;
 }
 
 .second-title h2 span {
-    position: relative; /* Needed for before & after positioning */
+    position: relative;
     display: inline-block;
-    padding: 0 10px; /* Add space for the lines */
+    padding: 0 10px;
 }
 
 .second-title h2 span::before, 
@@ -66,11 +70,11 @@
 }
 
 .second-title h2 span::before {
-    left: -45px; /* Adjust position to the left */
+    left: -45px; 
 }
 
 .second-title h2 span::after {
-    right: -45px; /* Adjust position to the right */
+    right: -45px;
 }
 
 @media (max-width: 1000px) {
