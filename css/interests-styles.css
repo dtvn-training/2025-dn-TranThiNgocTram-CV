@@ -1,0 +1,73 @@
+#interests {
+    min-height: 40vh;
+    background-color: #001E35;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+}
+
+.interests-list {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 20px;
+}
+
+.interest-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.interest-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.interest-image img:hover{
+    transform: scale(1.2);
+}
+
+.interest-content {
+    width: 40%;
+    background-color: #0E2232;
+    padding: 15px 20px;
+}
+
+.interest-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.interest-title {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.interest-detail {
+    color: #ffffff80;
+}
+
+@media (max-width: 1000px) {
+    .interests-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-top: 20px;
+    }
+
+    .interests-box {
+        width: 100%;
+    }
+}
