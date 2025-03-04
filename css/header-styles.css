@@ -70,7 +70,6 @@ header {
     height: 3px;
     background-color: white;
     margin: 5px 0;
-    transition: 0.4s;
 }
 
 @media (max-width: 950px) {
