@@ -1,0 +1,88 @@
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.space-lr {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.space-tb {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.placeholder {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.placeholder h5 {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    font-size: 6vw;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.8rem;
+}
+
+.second-title {
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative; 
+    margin-bottom: 10px;
+}
+
+.second-title h2 span {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.second-title h2 span::before, 
+.second-title h2 span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 35px;
+    height: 4px;
+    background: #f71735;
+    transform: translateY(-50%);
+}
+
+.second-title h2 span::before {
+    left: -45px; 
+}
+
+.second-title h2 span::after {
+    right: -45px;
+}
+
+@media (max-width: 1000px) {
+    .placeholder h5 {
+        font-size: 10vw;
+        padding-bottom: 20px;
+    }
+    .second-title {
+        font-size: 20px;
+    }
+}
